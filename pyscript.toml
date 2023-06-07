@@ -1,0 +1,10 @@
+packages = [ 
+  "arrr", 
+  "numpy", 
+  "matplotlib" 
+]
+
+[[fetch]]
+files = [ "main.py", "utils.py" ]
+from = "mycode/"
+to_folder = "mycode"
