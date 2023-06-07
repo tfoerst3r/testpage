@@ -3,14 +3,15 @@
 /env/
 /site/
 *.orig
-*.html
-/docs/images/uml/out/
 .DS_Store
 
 # build folder
 public/
 site/
 
-# temporary files
+# environments
+.venv/
+
+# temporary files and folders
 *.sw?
 __pycache__/
