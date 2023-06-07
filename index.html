@@ -4,6 +4,9 @@
   <title>Arrr</title>
   <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
   <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <script>
+  function clearBox(elementID) { document.getElementById(elementID).innerHTML = ""; }
+  </script> 
 </head>
 
 <body>
@@ -20,7 +23,7 @@
   
   <label for="showplot">Plotting parameter 1, as int</label>
   <input type="text" id="showplot" placeholder="Type interger here...">
-  <button py-click="plotter()">Plot</button>
+  <button py-click="plotter()" onclick="clearBox('output')">Plot</button>
   
   <p style="margin-top: 2rem"></p>
   
