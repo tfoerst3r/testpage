@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arrr</title>
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+
+<body>
+  <py-config src="./pyscript.toml"></py-config>
+  <py-script src="./mycode/main.py"></py-script>
+
+  <h2>Arrr</h2>
+
+  <label for="english">Translate English into Pirate</label>
+  <input type="text" id="english" placeholder="Type here ...">
+  <button py-click="english_to_pirate()">Translate</button>
+  
+  <p style="margin-top: 2rem"></p>
+  
+  <label for="showplot">Plotting parameter 1, as int</label>
+  <input type="text" id="showplot" placeholder="Type interger here...">
+  <button py-click="plotter()">Plot</button>
+  
+  <p style="margin-top: 2rem"></p>
+  
+  <div id="output"></div>
+
+</body>
+</html>
+
